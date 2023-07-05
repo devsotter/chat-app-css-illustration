@@ -11,8 +11,7 @@
   margin: 0 auto;
   position: relative;
 
-
-  &::before{
+  &::before {
     content: "";
     width: 450px;
     height: 700px;
@@ -21,16 +20,14 @@
     position: absolute;
     left: -87px;
     top: 0;
-}
+  }
 
   .box-content {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-   align-items: center;
+    align-items: center;
     gap: 130px;
-
-
 
     .smartphone {
       max-width: 250px;
@@ -43,44 +40,105 @@
       .header-phone {
         border-radius: 20px 20px 5px 5px;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
         background: $gd-color;
         height: 70px;
 
-        
-        .profile {
-            display: flex;
-            justify-content: left;
-            align-items: end;
-            gap: 10px;
+        .arrow {
+            width: 18px;
+            height: 18px;
             position: relative;
-            .arrow {
-          position: relative;
+            bottom: -2px;
+            right: -2px;
+            
 
-            }
-            img {
-                border-radius: 50%;
-                width: 25px;
-                height: 25px;
-                border: 1px solid $bg-app;
-            }
 
+            &::before {
+                content: "";
+                width: 7px;
+                height: 2px;
+                background-color: $bg-app;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                transform: rotate(50deg);
+                border-radius: 3px;
+              }
+              &::after {
+                content: "";
+                width: 7px;
+                height: 2px;
+                position: absolute;
+                top: -0px;
+                left: 10px;
+                transform: rotate( -50deg);
+                background-color: $bg-app;
+                border-radius: 3px;
+              }
+  
+  
         }
-        h1{
-            font-size: 12px;
-            color: $bg-app;
+        .profile {
+          display: flex;
+          justify-content: left;
+          align-items: end;
+          align-self: flex-end;
+          margin: 15px 0;
+          gap: 10px;
+          position: relative;
+          .arrow {
+            position: relative;
+          }
+          img {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            border: 1px solid $bg-app;
+          }
+        }
+        h1 {
+            margin-top: 2px;
+          font-size: 12px;
+          color: $bg-app;
         }
         h2 {
-            font-size: 7px;
-            color: rgb(210, 210, 210);
-    
+          font-size: 7px;
+          color: rgb(210, 210, 210);
+          margin-top: 2px;
         }
 
-        span {
-            width: 30px;
-            height: 30px;
+        .menu {
+            width: 2px;
+            height: 2px;
+           position: relative;
+           left: -20px;
+           bottom: -4px;
+          background-color: white;
+
+          &::before {
+            content: "";
+            width: 2px;
+            height: 2px;
+             position: absolute;
+             left: 0;
+             bottom: -8px;
             background-color: white;
+            border-radius: 50%;
+
+          }
+          &::after {
+            content: "";
+            width: 2px;
+            height: 2px;
+             position: absolute;
+             left: 0;
+             bottom:  -4px;
+             border-radius: 50%;
+            background-color: white;
+
+          }
+
         }
 
         &::before {
