@@ -1,5 +1,6 @@
 .messages {
   .message-1 {
+    position: relative;
     p {
       color: $text-violet;
       font-size: 8px;
@@ -9,8 +10,26 @@
       width: 130px;
       border-radius: 10px 10px 10px 3px;
 
+      &:nth-child(1) {
+        opacity: 0;
+        animation: slide 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 0.5s;
+        transform: translateX(-150px);
+      }
       &:nth-child(2) {
-        display: block;
+        opacity: 0;
+        animation: slide 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 1.2s;
+        transform: translateX(-150px);
+      }
+
+      @keyframes slide {
+        100% {
+          transform: translateX(0px);
+          opacity: 100%;
+        }
       }
     }
   }
@@ -24,12 +43,36 @@
       display: flex;
       justify-content: end;
       align-items: center;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      border-radius: 10px;
 
-      img {
-        width: 40px;
-        height: 40px;
-        margin: 0 5px;
-        border-radius: 10px;
+      &:nth-child(1) {
+        opacity: 0;
+        animation: appear 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 2s;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        animation: appear 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 2.5s;
+      }
+      &:nth-child(3) {
+        opacity: 0;
+        animation: appear 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 3s;
+      }
+
+      @keyframes appear {
+        100% {
+          opacity: 100%;
+        }
       }
     }
     p {
@@ -42,9 +85,31 @@
       border-radius: 10px 10px 3px 10px;
       box-shadow: 3px 3px 10px rgb(205, 202, 202);
 
+      &:nth-child(2) {
+        opacity: 0;
+        animation: slide-right 0.9s forwards;
+        transition-timing-function: ease-in;
+        transform: translateX(150px);
+        animation-delay: 4s;
+   
+      }
+
       &:nth-child(3) {
+        opacity: 0;
         margin: 0 10px;
         width: 85px;
+        animation: slide-right 0.9s forwards;
+        transition-timing-function: ease-in;
+        transform: translateX(150px);
+        animation-delay: 4.5s;
+      }
+
+      @keyframes slide-right {
+        100% {
+          opacity: 100%;
+        transform: translateX(0px);
+        }
+        
       }
     }
   }
@@ -58,7 +123,14 @@
       background-color: hsl(272, 65%, 91%);
       border-radius: 10px 10px 10px 3px;
       max-width: 130px;
+      opacity: 0;
+      animation: slide 0.9s forwards;
+      transition-timing-function: ease-in;
+      animation-delay: 5.5s;
+      transform: translateX(-150px);
     }
+
+  
 
     .price {
       background-color: red;
@@ -72,8 +144,20 @@
       margin: 10px;
       font-size: 8px;
       color: $bg-app;
-      background: $gradient-invert; 
+      background: $gradient-invert;
 
+      &:nth-child(2){
+        opacity: 0;
+        animation: appear 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 6.5s;
+      }
+      &:nth-child(3){
+        opacity: 0;
+        animation: appear 0.9s forwards;
+        transition-timing-function: ease-in;
+        animation-delay: 7s;
+         }
       span {
         width: 13px;
         height: 13px;
