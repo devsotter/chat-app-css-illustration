@@ -1,0 +1,129 @@
+.messages {
+  .message-1 {
+    p {
+      color: $text-violet;
+      font-size: 8px;
+      margin: 10px;
+      padding: 10px;
+      background-color: hsl(272, 65%, 91%);
+      width: 130px;
+      border-radius: 10px 10px 10px 3px;
+
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+  }
+
+  .message-2 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    .dogs {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        border-radius: 10px;
+      }
+    }
+    p {
+      color: hsl(271, 15%, 43%);
+      font-size: 8px;
+      margin: 10px;
+      padding: 10px;
+      background-color: hsl(0, 0%, 96%);
+      width: 130px;
+      border-radius: 10px 10px 3px 10px;
+      box-shadow: 3px 3px 10px rgb(205, 202, 202);
+
+      &:nth-child(3) {
+        margin: 0 10px;
+        width: 85px;
+      }
+    }
+  }
+
+  .message-3 {
+    .m-1 {
+      color: $text-violet;
+      font-size: 8px;
+      margin: 10px;
+      padding: 10px;
+      background-color: hsl(272, 65%, 91%);
+      border-radius: 10px 10px 10px 3px;
+      max-width: 130px;
+    }
+
+    .price {
+      background-color: red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 160px;
+      border-radius: 10px 10px 10px 3px;
+      background: $gd-color;
+      padding: 8px;
+      margin: 10px;
+      font-size: 8px;
+      color: $bg-app;
+
+      span {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.315);
+      }
+      .value {
+        text-align: start;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+
+    .p-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.input-text {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgb(205, 202, 202);
+
+  p {
+    font-size: 10px;
+    text-align: center;
+    margin-left: 20px;
+    color: hsl(270, 7%, 64%);
+  }
+
+  .submit {
+    background-color: hsl(271, 36%, 24%);
+    width: 25px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 50%;
+  }
+}
