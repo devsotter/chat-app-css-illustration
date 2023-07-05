@@ -1,0 +1,27 @@
+
+.about {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 450px;
+    line-height: 1.8;
+
+    @include mobile {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+      color: $dark-violet;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 20px;
+      color: $dark-gravysh;
+      font-weight: 500px;
+    }
+  }

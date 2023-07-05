@@ -67,11 +67,12 @@
       align-items: center;
       width: 160px;
       border-radius: 10px 10px 10px 3px;
-      background: $gd-color;
+      background: $bg-gradient;
       padding: 8px;
       margin: 10px;
       font-size: 8px;
       color: $bg-app;
+      background: $gradient-invert; 
 
       span {
         width: 13px;

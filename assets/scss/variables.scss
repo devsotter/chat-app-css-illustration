@@ -1,6 +1,18 @@
-$gd-color: linear-gradient(90deg, rgba(136,56,255,1) 25%, rgba(233,66,255,1) 100%);
+$bg-gradient: linear-gradient(90deg, rgba(136,56,255,1) 25%, rgba(233,66,255,1) 100%);
+$bg-dec: linear-gradient(50deg, rgba(136,56,255,1) 20%, rgba(233,66,255,1) 100%);
+$gradient-invert:linear-gradient(-90deg, rgba(136,56,255,1) 25%, rgba(233,66,255,1) 100%);
 $bg-app: hsl(270, 20%, 96%);
 $text-violet: hsl(276, 55%, 52%);
 $pink-style: hsl(289, 100%, 72%);
 $dark-gravysh: hsl(270, 7%, 64%);
 $dark-violet: hsl(271, 36%, 24%);
+
+
+
+
+
+@mixin mobile {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
