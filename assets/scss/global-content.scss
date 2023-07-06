@@ -8,6 +8,9 @@
   margin: 0 auto;
   position: relative;
 
+  @include mobile {
+    height: 100%;
+  }
   &::before {
     content: "";
     width: 450px;
