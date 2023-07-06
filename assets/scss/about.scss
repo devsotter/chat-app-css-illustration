@@ -6,11 +6,11 @@
     flex-direction: column;
     max-width: 450px;
     line-height: 1.8;
-    margin: 0 20px;
 
     @include mobile {
       max-width: 300px;
       text-align: center;
+      margin: 0 20px;
     }
 
     h1 {

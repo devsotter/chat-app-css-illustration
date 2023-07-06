@@ -34,7 +34,7 @@
     right: -87px;
     bottom: 0;
 
-    @include mobile {
+    @include tablet {
       display: none;
     }
   }
