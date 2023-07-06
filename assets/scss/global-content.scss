@@ -26,21 +26,7 @@
       top: -200px;
     }
   }
-  &::after {
-    content: "";
-    width: 450px;
-    height: 700px;
-    background: $pink-style;
-    opacity: 20%;
-    border-radius: 220px 220px 0 0;
-    position: absolute;
-    right: -87px;
-    bottom: 0;
 
-    @include tablet {
-      display: none;
-    }
-  }
 
   .box-content {
     flex-wrap: wrap;
@@ -61,6 +47,10 @@
       border-radius: 30px;
       position: relative;
       overflow: hidden;
+
+      @include mobile {
+        margin-top: 100px;
+      }
     }
   }
 }
